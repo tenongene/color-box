@@ -1,0 +1,18 @@
+.colorBox {
+    background-color: rgb(253, 255, 255);
+    display: block;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    border: 2px solid black;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top:100px;
+}
+
+.colorBox > p {
+    flex-grow: 1;
+    font-size: 1.3rem;
+}
