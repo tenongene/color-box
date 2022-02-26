@@ -5,6 +5,7 @@
     align-items: center;
 }
 
+.form > input:focus,
 .form > input {
     width: 230px;
     border-radius:10px;

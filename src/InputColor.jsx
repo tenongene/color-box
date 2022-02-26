@@ -1,10 +1,18 @@
 import React from 'react';
 import './InputColor.css';
 
-const InputColor = () => {
+const InputColor = ({ boxColor, setBoxColor }) => {
 	return (
 		<form className="form">
-			<input type="text" autoFocus id="addColor" placeholder="Add color name" required />
+			<input
+				type="text"
+				id="addColor"
+				placeholder="Add color name"
+                autoFocus
+				required
+				value={boxColor}
+				onChange={(e) => setBoxColor(e.target.value)}
+			/>
 		</form>
 	);
 };

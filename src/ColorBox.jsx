@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 import './ColorBox.css';
 
-const ColorBox = () => {
-  return (
-    <div className="colorBox">
-        <p>Empty Value</p>
-    </div>
-  )
-}
+const ColorBox = ({ boxColor, handleColorChange }) => {
+	return (
+		<div className="colorBox" style={{ backgroundColor: boxColor }} onChange={() => handleColorChange()}>
+			<p>{boxColor ? boxColor : 'Empty Value'}</p>
+		</div>
+	);
+};
 
-export default ColorBox
+export default ColorBox;
