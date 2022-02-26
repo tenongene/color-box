@@ -14,9 +14,9 @@ function App() {
 	return (
 		<div className="App">
 			{/*  */}
-			<ColorBox boxColor={boxColor} setBoxColor={setBoxColor} handleColorChange={handleColorChange} />
+			<ColorBox boxColor={boxColor} setBoxColor={setBoxColor} handleColorChange={handleColorChange}/>
 
-			<InputColor newColor={boxColor} setBoxColor={setBoxColor} />
+			<InputColor newColor={boxColor} setBoxColor={setBoxColor}/>
 		</div>
 	);
 }
